@@ -1,0 +1,85 @@
+{
+  "id": "tutorial-stranger",
+  "week": 0,
+  "title": "The Stranger on the Road",
+  "isTutorial": true,
+  "setting": "The road to Greyhollow forks at dusk — and a stranger is waiting there, watching you come. They want to know if you're the right kind of traveler.",
+  "introVariations": [
+    {
+      "requireFlag": null,
+      "text": "You find them at the fork where the milestone stone is oldest. Road-worn cloak, a sword resting on their shoulder the way experienced fighters carry things — lightly, ready. They study you without pretending not to.\n\n\"You're heading to Greyhollow,\" they say. Not a question.\n\n\"Word is they've got trouble. Word is they're looking for someone.\"\n\nThey straighten up. The sword leaves their shoulder.\n\n\"Let's see if you're someone.\""
+    }
+  ],
+  "foes": [
+    {
+      "id": "stranger",
+      "name": "The Stranger",
+      "abbr": "ST",
+      "color": "#8E7CC3",
+      "combatStat": { "label": "STR", "value": 70 },
+      "vitality": 60,
+      "dmg": 9,
+      "isLeader": true,
+      "displayStats": { "STR": 70, "AGI": 65, "VIT": 60 }
+    }
+  ],
+  "approaches": {
+    "fight": {
+      "successText": "You catch them off guard. A wild swing, a stumble of theirs, and your blade finds its mark. They drop to one knee, breathing hard. They stare at you with new respect.\n\n\"Well,\" they say. \"I'll be damned.\"\n\nThey straighten up, sheathe their blade, and bow slightly.\n\n\"Greyhollow needs someone like you. Don't let them down.\"",
+      "failureText": "You swing. They sidestep. They swing. You stumble. The exchange lasts only a few moments, and then you are on your back in the dust, the Stranger's blade resting lightly against your throat.\n\nThey look at you for a long second. Then they sheathe their blade.\n\n\"You've got the heart for it,\" they say. \"Just not the rest. Yet.\"\n\nThey offer you a hand up.",
+      "victoryFlag": "TUTORIAL_WIN",
+      "defeatFlag": "TUTORIAL_LOST"
+    },
+    "charm": {
+      "successText": "You don't draw your weapon. Instead you ask them their name. You ask why they wait at this fork. You ask what trouble Greyhollow is in, and whether they were ever there themselves.\n\nThey watch you for a long time. Then they almost smile.\n\n\"Smart, then. Not stupid. That's something.\"\n\nThey sheathe their blade.",
+      "failureText": "Your words don't land. Whatever you said, it was the wrong thing.\n\n\"Words later,\" they say. \"Steel first.\"",
+      "successFlag": "TUTORIAL_CHARMED",
+      "onFailure": "combat-buffed"
+    },
+    "flee": {
+      "successText": "You turn and run. They don't pursue. As you go, you hear them call after you, not unkindly:\n\n\"That's a choice too. Come back when you're ready to make a different one.\"",
+      "failureText": "You turn, and they are faster than you should have known. The flat of their blade strikes your shoulder. You spin, off balance, weapon raised.\n\n\"Now we fight,\" they say.",
+      "successFlag": "TUTORIAL_FLED",
+      "onFailure": "combat-firsthit"
+    }
+  },
+  "rewards": {
+    "victory": { "gold": 50, "vit": 0 },
+    "defeat":  { "gold": 50, "vit": 0 },
+    "charmed": { "gold": 50, "vit": 0 },
+    "fled":    { "gold": 50, "vit": 0 }
+  },
+  "mentor": {
+    "title": "The Mentor's Words",
+    "paragraphs": [
+      "They look at you for a long moment, taking your measure.",
+      "\"Listen well, traveler. Greyhollow needs help — real help — and right now, you can't give it. Not yet. You're not strong enough. Not sharp enough. Not steady enough.\"",
+      "\"That's not an insult. That's just true. Everyone starts here.\"",
+      "\"There are roads between us, you and a hero. Most people never walk them. They wait for the world to make them brave. The world doesn't work that way.\"",
+      "\"You want to be useful in Greyhollow? Walk those roads. Train your body. Read the books no one's making you read. Talk to people who scare you a little. Sleep when you should sleep. Show up every day, even when you don't feel like it.\"",
+      "\"Do that for a few weeks. Then come find me again.\"",
+      "They press something small into your palm — a coin purse, lighter than you'd expect, but more than you had a moment ago.",
+      "\"Take this. You'll need it for the road.\"",
+      "They turn to leave. Then, over their shoulder:",
+      "\"And don't make me wait too long.\""
+    ],
+    "closingTitle": "Arrival at Greyhollow",
+    "closingParagraphs": [
+      "You sling the cloak over your shoulders and pocket the coin. The road ahead is dim now, but you can see Greyhollow's lights in the valley below — windows lit warm, smoke rising from chimneys, a single tall lantern at the edge of its square.",
+      "You've arrived.",
+      "And somewhere ahead, on a road you haven't walked yet, the Stranger is waiting."
+    ],
+    "rewards": {
+      "gold": 50,
+      "vit": 0,
+      "gear": {
+        "name": "Small Dagger",
+        "icon": "🗡️",
+        "damageBonus": 1,
+        "rarity": "common",
+        "comparedTo": "your bare hands"
+      },
+      "restoreVitality": true
+    }
+  }
+}
