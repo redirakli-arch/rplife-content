@@ -1,1 +1,8 @@
-
+{
+  "schemaVersion": 1,
+  "id": "season-1",
+  "version": "2026.04.27.1",
+  "title": "The Smoke Over Greyhollow",
+  "tutorial": "tutorial-stranger",
+  "weeks": ["w1-bandits", "w2-wolf", "w3-merchant", "w4-finale"]
+}
