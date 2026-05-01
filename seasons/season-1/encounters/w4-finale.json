@@ -1,0 +1,97 @@
+{
+  "id": "w4-finale",
+  "week": 4,
+  "title": "What Lies Beneath Greyhollow",
+  "setting": "Beneath the old well, beneath the chapel foundation, there is a passage. The copper rings, the collar, the merchant, the bandits, the beast — they were all touching different parts of the same shape.",
+  "introVariations": [
+    {
+      "requireFlag": "W3_FOUGHT",
+      "text": "You descend into the passage with the village's blessing. Behind you, the elder, the blacksmith, the children watching from upstairs windows. They have given you what they can — bread, water, and a small lantern that will not run out.\n\nThe passage smells of old water and copper. You walk for what feels like an hour. The ceiling lowers. The walls glisten.\n\nYou enter a chamber. In its center, on a stone slab, is a circle of twelve copper rings. Eleven of them are dull — empty. The twelfth is missing.\n\nAnd beyond the circle, watching you, is a figure cloaked in something that is not quite shadow.\n\n\"Do you have it?\" the figure asks. Its voice is everywhere and nowhere.\n\n\"The last ring.\""
+    },
+    {
+      "requireFlag": "W3_CHARMED",
+      "text": "You descend into the passage with the village's blessing. Behind you, the elder, the blacksmith, the children watching from upstairs windows. They have given you what they can — bread, water, and a small lantern that will not run out.\n\nThe passage smells of old water and copper. You walk for what feels like an hour. The ceiling lowers. The walls glisten.\n\nYou enter a chamber. In its center, on a stone slab, is a circle of twelve copper rings. Eleven of them are dull — empty. The twelfth is missing.\n\nAnd beyond the circle, watching you, is a figure cloaked in something that is not quite shadow.\n\n\"Do you have it?\" the figure asks. Its voice is everywhere and nowhere.\n\n\"The last ring.\""
+    },
+    {
+      "requireFlag": "W3_FLED",
+      "text": "You descend alone. The villagers have not abandoned you, but they have not gathered either. They will not watch a fourth defeat.\n\nThe passage smells of old water and copper. You walk for what feels like an hour. The ceiling lowers. The walls glisten.\n\nYou enter a chamber. In its center, on a stone slab, is a circle of twelve copper rings. Eleven of them are dull — empty. The twelfth is missing.\n\nAnd beyond the circle, watching you, is a figure cloaked in something that is not quite shadow.\n\n\"Do you have it?\" the figure asks. Its voice is everywhere and nowhere.\n\n\"The last ring.\""
+    },
+    {
+      "requireFlag": "W3_LOST",
+      "text": "You descend alone. The villagers have not abandoned you, but they have not gathered either. They will not watch a fourth defeat.\n\nThe passage smells of old water and copper. You walk for what feels like an hour. The ceiling lowers. The walls glisten.\n\nYou enter a chamber. In its center, on a stone slab, is a circle of twelve copper rings. Eleven of them are dull — empty. The twelfth is missing.\n\nAnd beyond the circle, watching you, is a figure cloaked in something that is not quite shadow.\n\n\"Do you have it?\" the figure asks. Its voice is everywhere and nowhere.\n\n\"The last ring.\""
+    },
+    {
+      "requireFlag": null,
+      "text": "Not everyone trusts you. But enough do. You go down with a borrowed lantern and the elder's silent prayer.\n\nThe passage smells of old water and copper. You walk for what feels like an hour. The ceiling lowers. The walls glisten.\n\nYou enter a chamber. In its center, on a stone slab, is a circle of twelve copper rings. Eleven of them are dull — empty. The twelfth is missing.\n\nAnd beyond the circle, watching you, is a figure cloaked in something that is not quite shadow.\n\n\"Do you have it?\" the figure asks. Its voice is everywhere and nowhere.\n\n\"The last ring.\""
+    }
+  ],
+  "foes": [
+    {
+      "id": "bound-one",
+      "name": "The Bound One",
+      "abbr": "BO",
+      "color": "#8B6B3D",
+      "combatStat": { "label": "INT", "value": 75 },
+      "vitality": 80,
+      "dmg": 8,
+      "isLeader": true,
+      "displayStats": { "INT": 75, "VIT": 80 }
+    }
+  ],
+  "scalingTable": {
+    "winFlags": ["W1_FOUGHT","W1_CHARMED","W2_FOUGHT","W2_CHARMED","W3_FOUGHT","W3_CHARMED"],
+    "tiers": [
+      { "minWins": 3, "stat": 60, "vitality": 50 },
+      { "minWins": 2, "stat": 65, "vitality": 60 },
+      { "minWins": 1, "stat": 70, "vitality": 70 },
+      { "minWins": 0, "stat": 75, "vitality": 80 }
+    ]
+  },
+  "approaches": {
+    "fight": {
+      "successText": "Your blade meets the figure and finds purchase where it should not. The cloak unravels — not into shadow but into ordinary smoke. What remains is a tired, ancient thing, no larger than a child, blinking up at you with eyes the color of old copper.\n\n\"It is done, then,\" it says. And it crumbles into the slab, and the rings turn to dust, and the chamber is just stone.\n\nAbove ground, the smoke over Greyhollow lifts for the first time in a generation.",
+      "failureText": "You rise from the chamber alone. The Bound One let you live, for reasons you cannot understand. The villagers ask what happened, and you find you cannot lie. You tell them the truth.\n\nThey do not blame you. But they begin to pack their wagons, quietly.",
+      "victoryFlag": "S1_VICTORY_FOUGHT",
+      "defeatFlag": "S1_DEFEAT"
+    },
+    "charm": {
+      "successText": "You don't fight. You ask. You ask why it wants out. You ask what it is. You ask if it remembers being something else, before the rings, before the binding.\n\nAnd it tells you. A long answer. A sad one. By the end, you understand that the Bound One does not need to be slain — only released. Only allowed, finally, to leave.\n\nYou step back. The rings dissolve of their own accord. The figure thins, smiles a half-smile, and is simply gone.\n\nAbove ground, Greyhollow is quiet. Some say a sadness has lifted. Some say a kindness has, too.",
+      "failureText": "You speak, and it listens, but its patience is older than your words.\n\n\"You do not understand,\" it says. \"And understanding is not what I require.\"\n\nThe chamber begins to hum.",
+      "successFlag": "S1_VICTORY_CHARMED",
+      "onFailure": "combat-buffed"
+    },
+    "flee": {
+      "successText": "You turn and run. Behind you, you hear nothing. No pursuit. No anger. Only the quiet of stone.\n\nYou emerge into Greyhollow at dawn. The smoke is still there. The village is still here. Something was not finished, but neither was it freed.\n\nSome stories don't end. They just keep waiting.",
+      "failureText": "The cloak rises around you faster than you can turn. The chamber's air thickens. You cannot find the passage you came through.\n\n\"You came this far,\" the Bound One says, almost gently. \"Don't make this harder than it needs to be.\"",
+      "successFlag": "S1_INCOMPLETE",
+      "onFailure": "combat-firsthit"
+    }
+  },
+  "rewards": {
+    "victory": {
+      "gold": 500,
+      "vit": 0,
+      "gear": {
+        "name": "Greyhollow Blade",
+        "icon": "⚔️",
+        "damageBonus": 5,
+        "rarity": "common",
+        "comparedTo": "Guard's Short Sword (+4 dmg)"
+      }
+    },
+    "defeat":  { "gold": 0, "vit": -20 },
+    "charmed": {
+      "gold": 400,
+      "vit": 0,
+      "gear": {
+        "name": "The Twelfth Ring",
+        "icon": "💍",
+        "damageBonus": 0,
+        "defenseBonus": 2,
+        "rarity": "common",
+        "comparedTo": "Copper Ring (−1 dmg taken)"
+      }
+    },
+    "fled":    { "gold": 0, "vit": 0 }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "id": "w3-merchant",
+  "week": 3,
+  "title": "The Merchant with the Copper Ring",
+  "setting": "A merchant has arrived in Greyhollow calling himself Vellis of the Eastern Roads. He is too charming — and his copper ring matches exactly the woven collar from the woods.",
+  "introVariations": [
+    {
+      "requireFlag": "W2_FOUGHT",
+      "text": "You bring the copper collar to Vellis's stall. His eyes flicker — only for a heartbeat — before his smile returns.\n\n\"A curious piece. May I see it?\"\n\nYou confront him at his stall as dusk falls. The lanterns are lit. His goods glitter in their cases — but you see, beneath the velvet, ledgers of names and what was paid, what was promised.\n\n\"You're a thoughtful one,\" he says, smiling. \"Most travelers don't read the fine print.\"\n\nTwo of his \"guards\" emerge from behind the wagon. They are not local men."
+    },
+    {
+      "requireFlag": "W2_CHARMED",
+      "text": "The wolf comes to the village edge that night. She does not enter. But she watches Vellis's wagon for hours, and the merchant himself does not come out until she is gone.\n\nYou confront him at his stall as dusk falls. The lanterns are lit. His goods glitter in their cases — but you see, beneath the velvet, ledgers of names and what was paid, what was promised.\n\n\"You're a thoughtful one,\" he says, smiling. \"Most travelers don't read the fine print.\"\n\nTwo of his \"guards\" emerge from behind the wagon. They are not local men."
+    },
+    {
+      "requireFlag": "W2_FLED",
+      "text": "Vellis greets every villager warmly — including you. But you notice he never quite looks you in the eye. Something in him knows you have been to the woods.\n\nYou confront him at his stall as dusk falls. The lanterns are lit. His goods glitter in their cases — but you see, beneath the velvet, ledgers of names and what was paid, what was promised.\n\n\"You're a thoughtful one,\" he says, smiling. \"Most travelers don't read the fine print.\"\n\nTwo of his \"guards\" emerge from behind the wagon. They are not local men."
+    },
+    {
+      "requireFlag": "W2_LOST",
+      "text": "Vellis offers you a healing tincture, free of charge. \"For our brave hero,\" he says. The bottle is the wrong color. You don't drink it.\n\nYou confront him at his stall as dusk falls. The lanterns are lit. His goods glitter in their cases — but you see, beneath the velvet, ledgers of names and what was paid, what was promised.\n\n\"You're a thoughtful one,\" he says, smiling. \"Most travelers don't read the fine print.\"\n\nTwo of his \"guards\" emerge from behind the wagon. They are not local men."
+    },
+    {
+      "requireFlag": null,
+      "text": "You confront Vellis at his stall as dusk falls. The lanterns are lit. His goods glitter in their cases — but you see, beneath the velvet, ledgers of names and what was paid, what was promised.\n\n\"You're a thoughtful one,\" he says, smiling. \"Most travelers don't read the fine print.\"\n\nTwo of his \"guards\" emerge from behind the wagon. They are not local men."
+    }
+  ],
+  "foes": [
+    {
+      "id": "vellis",
+      "name": "Vellis the Merchant",
+      "abbr": "VM",
+      "color": "#C4973D",
+      "combatStat": { "label": "CHA", "value": 65 },
+      "vitality": 35,
+      "dmg": 5,
+      "isLeader": true,
+      "displayStats": { "CHA": 65, "INT": 60, "VIT": 35 }
+    },
+    {
+      "id": "hired-guard",
+      "name": "Hired Guard",
+      "abbr": "HG",
+      "color": "#7A8A9A",
+      "combatStat": { "label": "STR", "value": 40 },
+      "vitality": 25,
+      "dmg": 4,
+      "displayStats": { "STR": 40, "VIT": 25 }
+    }
+  ],
+  "approaches": {
+    "fight": {
+      "successText": "You take Vellis alive, though his guards do not survive the fight. From his wagon you recover ledgers, contracts, and a small iron-bound chest.\n\nInside the chest: dozens of copper rings, each etched with a different rune. And a journal, half-finished, in a hand that is not his own.",
+      "failureText": "You wake outside the village walls. Vellis is gone. His wagon is gone. So is half the elder's coin and the blacksmith's wife's silver.\n\nWhatever he was doing here, he is doing it elsewhere now.",
+      "victoryFlag": "W3_FOUGHT",
+      "defeatFlag": "W3_LOST"
+    },
+    "charm": {
+      "successText": "You don't draw your blade. Instead you ask him about the names in his ledger. The dates. The amounts. You ask, gently, what he is buying with all this coin.\n\nHe says nothing for a long moment. Then he laughs — a real laugh, a tired one. He tells you everything. He gives you a copper ring \"for your trouble\" and asks only that you let him leave by morning.\n\nHe is gone before sunrise. The villagers wake up missing nothing.",
+      "failureText": "Vellis's smile sharpens. \"Oh, you ARE clever. But cleverness is cheap.\"\n\nHe gestures, and his guards close in.",
+      "successFlag": "W3_CHARMED",
+      "onFailure": "combat-buffed"
+    },
+    "flee": {
+      "successText": "You walk away from his stall without buying anything. You warn the elder. By the time the villagers gather, Vellis is gone — and so is much of his stock.\n\nWhatever he was doing, you didn't stop it. But you did not feed it, either.",
+      "failureText": "His guards block your retreat. One catches your arm and twists it hard. The other strikes from behind.\n\n\"You don't get to walk away yet,\" Vellis says.",
+      "successFlag": "W3_FLED",
+      "onFailure": "combat-firsthit"
+    }
+  },
+  "rewards": {
+    "victory": {
+      "gold": 250,
+      "vit": 0,
+      "gear": {
+        "name": "Guard's Short Sword",
+        "icon": "⚔️",
+        "damageBonus": 4,
+        "rarity": "common",
+        "comparedTo": "Fang Dagger (+3 dmg)"
+      }
+    },
+    "defeat":  { "gold": 0, "vit": -10 },
+    "charmed": {
+      "gold": 120,
+      "vit": 0,
+      "gear": {
+        "name": "Copper Ring",
+        "icon": "💍",
+        "damageBonus": 0,
+        "defenseBonus": 1,
+        "rarity": "common",
+        "comparedTo": "no protection"
+      }
+    },
+    "fled":    { "gold": 0, "vit": 0 }
+  }
+}

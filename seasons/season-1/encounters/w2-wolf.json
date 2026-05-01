@@ -1,0 +1,77 @@
+{
+  "id": "w2-wolf",
+  "week": 2,
+  "title": "The Beast in the Woods",
+  "setting": "Livestock are being torn apart at the edge of the Whispering Woods. A child swears she saw something with too many shoulders moving between the trees.",
+  "introVariations": [
+    {
+      "requireFlag": "W1_FOUGHT",
+      "text": "The villagers greet you with respect now. The blacksmith calls you by name. They ask for your help with the second matter — the one in the woods. They wouldn't ask anyone else, they say.\n\nYou enter the Whispering Woods at dusk. The trees are wrong here — too still, too quiet for autumn. You find the trail of broken branches and dark earth. You follow it.\n\nIn a clearing, you see her.\n\nA great wolf — bigger than any wolf has the right to be — stands over a half-eaten doe. Her fur is matted with mud and old blood. Her eyes catch yours. Yellow, intelligent, wounded.\n\nShe does not run. She watches you, panting."
+    },
+    {
+      "requireFlag": "W1_CHARMED",
+      "text": "Strange — Garric himself appears at the village edge before dawn. He doesn't enter, but he leaves a roughly drawn map at the elder's door. The woods, he scrawls, are not what they were. And he marks an X near the old quarry.\n\nYou enter the Whispering Woods at dusk. The trees are wrong here — too still, too quiet for autumn. You find the trail of broken branches and dark earth. You follow it.\n\nIn a clearing, you see her.\n\nA great wolf — bigger than any wolf has the right to be — stands over a half-eaten doe. Her fur is matted with mud and old blood. Her eyes catch yours. Yellow, intelligent, wounded.\n\nShe does not run. She watches you, panting."
+    },
+    {
+      "requireFlag": "W1_FLED",
+      "text": "The villagers don't ask you for help this time. They prepare to hunt the beast themselves. You can join them, or you can prove yourself worth their trust.\n\nYou enter the Whispering Woods at dusk. The trees are wrong here — too still, too quiet for autumn. You find the trail of broken branches and dark earth. You follow it.\n\nIn a clearing, you see her.\n\nA great wolf — bigger than any wolf has the right to be — stands over a half-eaten doe. Her fur is matted with mud and old blood. Her eyes catch yours. Yellow, intelligent, wounded.\n\nShe does not run. She watches you, panting."
+    },
+    {
+      "requireFlag": "W1_LOST",
+      "text": "Greyhollow has heard of your defeat. Some pity you. Some don't. The elder offers you a chance to redeem yourself — the beast in the woods has taken three more livestock. Someone must go.\n\nYou enter the Whispering Woods at dusk. The trees are wrong here — too still, too quiet for autumn. You find the trail of broken branches and dark earth. You follow it.\n\nIn a clearing, you see her.\n\nA great wolf — bigger than any wolf has the right to be — stands over a half-eaten doe. Her fur is matted with mud and old blood. Her eyes catch yours. Yellow, intelligent, wounded.\n\nShe does not run. She watches you, panting."
+    },
+    {
+      "requireFlag": null,
+      "text": "The elder sends word at first light — something has been in the livestock pens again. Something big.\n\nYou enter the Whispering Woods at dusk. The trees are wrong here — too still, too quiet for autumn. You find the trail of broken branches and dark earth. You follow it.\n\nIn a clearing, you see her.\n\nA great wolf — bigger than any wolf has the right to be — stands over a half-eaten doe. Her fur is matted with mud and old blood. Her eyes catch yours. Yellow, intelligent, wounded.\n\nShe does not run. She watches you, panting."
+    }
+  ],
+  "foes": [
+    {
+      "id": "lhirien",
+      "name": "Lhirien the Great Wolf",
+      "abbr": "LW",
+      "color": "#6B5A47",
+      "combatStat": { "label": "STR", "value": 60 },
+      "vitality": 50,
+      "dmg": 7,
+      "isLeader": true,
+      "displayStats": { "STR": 60, "AGI": 55, "VIT": 50 }
+    }
+  ],
+  "approaches": {
+    "fight": {
+      "successText": "She fights with the desperation of a creature who has been hunted for too long. But your blade finds its mark, and at the end she lies still in the moss.\n\nAround her neck, you find a collar of woven copper — old, ornate, not made by any human hand you know.",
+      "failureText": "She is faster than you expected. You wake to find your blood smeared across the bark of a fallen tree. She is gone. Whether she fled or chose to spare you, you cannot say.\n\nGreyhollow's elder offers you broth and silence when you stagger home.",
+      "victoryFlag": "W2_FOUGHT",
+      "defeatFlag": "W2_LOST"
+    },
+    "charm": {
+      "successText": "You lower your weapon. You speak — not in words, but in tone, slow and careful. You sit. You wait. The wolf's hackles flatten. She walks closer. She sniffs your hand and does not bite.\n\nAround her neck, you see it: a collar of woven copper. Not the mark of a beast, but of something that was once tame. Or once tamed.\n\nShe turns and walks back into the trees. But not before looking back at you, once, as if remembering a debt.",
+      "failureText": "Your stillness is mistaken for weakness. She lunges before you can move, and the moss is slick beneath your boots.",
+      "successFlag": "W2_CHARMED",
+      "onFailure": "combat-buffed"
+    },
+    "flee": {
+      "successText": "You back away slowly, holding her gaze. She does not pursue. Whatever she wants, she does not want you. You leave her to the doe and the silence.\n\nOn the way home, you notice the trees thinning. The woods are not as deep as you remembered.",
+      "failureText": "You turn to run and her teeth find your calf before your second step. You spin, weapon already drawn, blood already dripping.",
+      "successFlag": "W2_FLED",
+      "onFailure": "combat-firsthit"
+    }
+  },
+  "rewards": {
+    "victory": {
+      "gold": 180,
+      "vit": 0,
+      "gear": {
+        "name": "Fang Dagger",
+        "icon": "🗡️",
+        "damageBonus": 3,
+        "rarity": "common",
+        "comparedTo": "Bandit's Dagger (+2 dmg)"
+      }
+    },
+    "defeat":  { "gold": 0, "vit": -15 },
+    "charmed": { "gold": 90, "vit": 0 },
+    "fled":    { "gold": 0, "vit": -5 }
+  }
+}
