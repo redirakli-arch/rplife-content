@@ -1,8 +1,51 @@
 {
   "schemaVersion": 1,
   "id": "season-1",
-  "version": "2026.04.27.1",
+  "version": "2026.05.08.1",
   "title": "The Smoke Over Greyhollow",
   "tutorial": "tutorial-stranger",
-  "weeks": ["w1-bandits", "w2-wolf", "w3-merchant", "w4-finale"]
+  "weeks": ["w1-bandits", "w2-wolf", "w3-merchant", "w4-finale"],
+  "endings": {
+    "S1_VICTORY_FOUGHT": {
+      "title": "The Blade That Closed the Chamber",
+      "paragraphs": [
+        "You return to Greyhollow at dawn. The lanterns are already lit. Word travels faster than you do — by the time you reach the well, the elder is waiting, and behind her, half the village.",
+        "No one cheers. They have not earned cheering. But the smoke is gone, and the air over the chapel does not move the way it used to, and that is enough.",
+        "You set the Greyhollow Blade down on the elder's table. She does not pick it up. \"Keep it,\" she says. \"You'll need it again. Stories like this don't end so much as pause.\"",
+        "She is right. Within the season, the first stranger arrives at the village gate, asking for the one who unsealed the chamber."
+      ],
+      "chronicleLine": "Greyhollow's smoke lifted. They asked you to keep the blade. The first stranger arrived before the season turned."
+    },
+    "S1_VICTORY_CHARMED": {
+      "title": "What Was Released",
+      "paragraphs": [
+        "You return to Greyhollow at dawn. The chapel bell — silent for a generation — rings once, of its own accord, and then is quiet.",
+        "You do not tell the villagers what passed between you and the Bound One. You keep the Twelfth Ring on a cord around your neck, against your chest. It is warm there.",
+        "Some say a sadness has lifted from the village. Some say a kindness has, too. Both are true.",
+        "Within the season, the first stranger arrives at the village gate. They are not from anywhere near here. They have heard a story, they say, and would like to find the person in it."
+      ],
+      "chronicleLine": "The Bound One was released, not slain. The chapel bell rang once. A stranger came looking for the one in the story."
+    },
+    "S1_INCOMPLETE": {
+      "title": "Some Stories Don't End",
+      "paragraphs": [
+        "You emerge into Greyhollow at dawn. The smoke is still there. The chapel still hums when the wind is wrong. But you are alive, and so is the village, and so is the figure beneath the well.",
+        "The villagers do not ask what happened. They see your face and they understand: not finished, not freed.",
+        "You stay. You do not stay. Either way, the chamber waits. It has waited longer than this.",
+        "Within the season, a stranger arrives at the village gate. They have a question that begins in Greyhollow but does not end there."
+      ],
+      "chronicleLine": "You emerged from the chamber alive but unfinished. The smoke remained. A stranger came with a question that began in Greyhollow."
+    },
+    "S1_DEFEAT": {
+      "title": "What the Bound One Spared",
+      "paragraphs": [
+        "You wake in the chamber. You should not have. The Bound One stands at the slab, the rings dim around its feet, watching you with the same patient gaze.",
+        "\"Go,\" it says. \"Tell them I am still here. That is enough, for now.\"",
+        "You climb out of the well at midday. The villagers do not blame you — they had not expected you to win. But they begin, quietly, to pack their wagons. Not all of them. Enough.",
+        "Within the season, a stranger arrives at the half-empty village gate. They ask if anyone here remembers what is beneath the chapel. Someone points to you."
+      ],
+      "chronicleLine": "The Bound One spared you. The villagers began to pack their wagons. A stranger arrived asking who remembered the chamber."
+    }
+  },
+  "betweenSeasonsTeaser": "The chamber is quiet now. But word travels — and the road into Greyhollow is no longer empty. Strangers are coming, with their own stories, asking for the one who went down beneath the well. Their season has not yet begun. Wait for it."
 }
