@@ -3,6 +3,7 @@
   "week": 4,
   "title": "What Lies Beneath Greyhollow",
   "setting": "Beneath the old well, beneath the chapel foundation, there is a passage. The copper rings, the collar, the merchant, the bandits, the beast — they were all touching different parts of the same shape.",
+  "sceneImageUrl": "https://cdn.jsdelivr.net/gh/redirakli-arch/rplife-content@main/images/scenes/w4_scene.jpg",
   "introVariations": [
     {
       "requireFlag": "W3_FOUGHT",
@@ -30,6 +31,7 @@
       "id": "bound-one",
       "name": "The Bound One",
       "abbr": "BO",
+      "imageUrl": "https://cdn.jsdelivr.net/gh/redirakli-arch/rplife-content@main/images/foes/bound_one.png",
       "color": "#8B6B3D",
       "combatStat": { "label": "INT", "value": 75 },
       "vitality": 80,
