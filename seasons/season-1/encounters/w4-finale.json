@@ -31,7 +31,7 @@
       "id": "bound-one",
       "name": "The Bound One",
       "abbr": "BO",
-      "imageUrl": "https://cdn.jsdelivr.net/gh/redirakli-arch/rplife-content@main/images/foes/bound_one.png",
+      "imageUrl": "https://cdn.jsdelivr.net/gh/redirakli-arch/rplife-content@main/images/foes/bound_one.jpg",
       "color": "#8B6B3D",
       "combatStat": { "label": "INT", "value": 75 },
       "vitality": 80,

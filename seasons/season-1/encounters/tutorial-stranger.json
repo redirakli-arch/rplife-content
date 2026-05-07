@@ -16,7 +16,7 @@
       "id": "stranger",
       "name": "The Stranger",
       "abbr": "ST",
-      "imageUrl": "https://cdn.jsdelivr.net/gh/redirakli-arch/rplife-content@main/images/foes/stranger.png",
+      "imageUrl": "https://cdn.jsdelivr.net/gh/redirakli-arch/rplife-content@main/images/foes/stranger.jpg",
       "color": "#8E7CC3",
       "combatStat": { "label": "STR", "value": 70 },
       "vitality": 60,

@@ -31,7 +31,7 @@
       "id": "lhirien",
       "name": "Lhirien the Great Wolf",
       "abbr": "LW",
-      "imageUrl": "https://cdn.jsdelivr.net/gh/redirakli-arch/rplife-content@main/images/foes/great_wolf.png",
+      "imageUrl": "https://cdn.jsdelivr.net/gh/redirakli-arch/rplife-content@main/images/foes/great_wolf.jpg",
       "color": "#6B5A47",
       "combatStat": { "label": "STR", "value": 60 },
       "vitality": 50,
