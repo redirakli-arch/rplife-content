@@ -3,7 +3,7 @@
   "week": 4,
   "title": "What Lies Beneath Greyhollow",
   "setting": "Beneath the old well, beneath the chapel foundation, there is a passage. The copper rings, the collar, the merchant, the bandits, the beast — they were all touching different parts of the same shape.",
-  "sceneImageUrl": "https://cdn.jsdelivr.net/gh/redirakli-arch/rplife-content@main/images/scenes/w4_scene.jpg",
+  "sceneImageUrl": "https://cdn.jsdelivr.net/gh/redirakli-arch/rplife-content@main/seasons/season-1/scenes/w4.jpg",
   "introVariations": [
     {
       "requireFlag": "W3_FOUGHT",
@@ -31,22 +31,51 @@
       "id": "bound-one",
       "name": "The Bound One",
       "abbr": "BO",
-      "imageUrl": "https://cdn.jsdelivr.net/gh/redirakli-arch/rplife-content@main/images/foes/bound_one.jpg",
+      "imageUrl": "https://cdn.jsdelivr.net/gh/redirakli-arch/rplife-content@main/seasons/season-1/foes/bound_one.jpg",
       "color": "#8B6B3D",
-      "combatStat": { "label": "INT", "value": 75 },
+      "combatStat": {
+        "label": "INT",
+        "value": 75
+      },
       "vitality": 80,
       "dmg": 8,
       "isLeader": true,
-      "displayStats": { "INT": 75, "VIT": 80 }
+      "displayStats": {
+        "INT": 75,
+        "VIT": 80
+      }
     }
   ],
   "scalingTable": {
-    "winFlags": ["W1_FOUGHT","W1_CHARMED","W2_FOUGHT","W2_CHARMED","W3_FOUGHT","W3_CHARMED"],
+    "winFlags": [
+      "W1_FOUGHT",
+      "W1_CHARMED",
+      "W2_FOUGHT",
+      "W2_CHARMED",
+      "W3_FOUGHT",
+      "W3_CHARMED"
+    ],
     "tiers": [
-      { "minWins": 3, "stat": 60, "vitality": 50 },
-      { "minWins": 2, "stat": 65, "vitality": 60 },
-      { "minWins": 1, "stat": 70, "vitality": 70 },
-      { "minWins": 0, "stat": 75, "vitality": 80 }
+      {
+        "minWins": 3,
+        "stat": 60,
+        "vitality": 50
+      },
+      {
+        "minWins": 2,
+        "stat": 65,
+        "vitality": 60
+      },
+      {
+        "minWins": 1,
+        "stat": 70,
+        "vitality": 70
+      },
+      {
+        "minWins": 0,
+        "stat": 75,
+        "vitality": 80
+      }
     ]
   },
   "approaches": {
@@ -81,7 +110,10 @@
         "comparedTo": "Guard's Short Sword (+4 dmg)"
       }
     },
-    "defeat":  { "gold": 0, "vit": -20 },
+    "defeat": {
+      "gold": 0,
+      "vit": -20
+    },
     "charmed": {
       "gold": 400,
       "vit": 0,
@@ -94,6 +126,15 @@
         "comparedTo": "Copper Ring (−1 dmg taken)"
       }
     },
-    "fled":    { "gold": 0, "vit": 0 }
+    "fled": {
+      "gold": 0,
+      "vit": 0
+    }
+  },
+  "chronicles": {
+    "S1_VICTORY_FOUGHT": "Your blade found purchase where it should not have. The Bound One crumbled into dust, and the rings turned to nothing. Above ground, the smoke over Greyhollow lifted for the first time in a generation.",
+    "S1_VICTORY_CHARMED": "You asked, and it answered. By the end you understood: it did not need slaying — only release. The figure thinned, smiled a half-smile, and was simply gone.",
+    "S1_INCOMPLETE": "You turned and ran. No pursuit followed. Some stories don't end — they only keep waiting.",
+    "S1_DEFEAT": "The Bound One let you live. The villagers did not blame you, but they began to pack their wagons, quietly."
   }
 }

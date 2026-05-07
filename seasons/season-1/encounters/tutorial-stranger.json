@@ -4,7 +4,7 @@
   "title": "The Stranger on the Road",
   "isTutorial": true,
   "setting": "The road to Greyhollow forks at dusk — and a stranger is waiting there, watching you come. They want to know if you're the right kind of traveler.",
-  "sceneImageUrl": "https://cdn.jsdelivr.net/gh/redirakli-arch/rplife-content@main/images/scenes/prologue_scene.jpg",
+  "sceneImageUrl": "https://cdn.jsdelivr.net/gh/redirakli-arch/rplife-content@main/seasons/season-1/scenes/prologue.jpg",
   "introVariations": [
     {
       "requireFlag": null,
@@ -16,13 +16,20 @@
       "id": "stranger",
       "name": "The Stranger",
       "abbr": "ST",
-      "imageUrl": "https://cdn.jsdelivr.net/gh/redirakli-arch/rplife-content@main/images/foes/stranger.jpg",
+      "imageUrl": "https://cdn.jsdelivr.net/gh/redirakli-arch/rplife-content@main/seasons/season-1/foes/stranger.jpg",
       "color": "#8E7CC3",
-      "combatStat": { "label": "STR", "value": 70 },
+      "combatStat": {
+        "label": "STR",
+        "value": 70
+      },
       "vitality": 60,
       "dmg": 9,
       "isLeader": true,
-      "displayStats": { "STR": 70, "AGI": 65, "VIT": 60 }
+      "displayStats": {
+        "STR": 70,
+        "AGI": 65,
+        "VIT": 60
+      }
     }
   ],
   "approaches": {
@@ -46,10 +53,22 @@
     }
   },
   "rewards": {
-    "victory": { "gold": 50, "vit": 0 },
-    "defeat":  { "gold": 50, "vit": 0 },
-    "charmed": { "gold": 50, "vit": 0 },
-    "fled":    { "gold": 50, "vit": 0 }
+    "victory": {
+      "gold": 50,
+      "vit": 0
+    },
+    "defeat": {
+      "gold": 50,
+      "vit": 0
+    },
+    "charmed": {
+      "gold": 50,
+      "vit": 0
+    },
+    "fled": {
+      "gold": 50,
+      "vit": 0
+    }
   },
   "mentor": {
     "title": "The Mentor's Words",
@@ -83,5 +102,8 @@
       },
       "restoreVitality": true
     }
+  },
+  "chronicles": {
+    "DONE": "You met the Stranger at the fork in the road. They took your measure, then handed you a coin purse and a small dagger. Greyhollow's lights waited in the valley below."
   }
 }

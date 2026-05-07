@@ -3,7 +3,7 @@
   "week": 2,
   "title": "The Beast in the Woods",
   "setting": "Livestock are being torn apart at the edge of the Whispering Woods. A child swears she saw something with too many shoulders moving between the trees.",
-  "sceneImageUrl": "https://cdn.jsdelivr.net/gh/redirakli-arch/rplife-content@main/images/scenes/w2_scene.jpg",
+  "sceneImageUrl": "https://cdn.jsdelivr.net/gh/redirakli-arch/rplife-content@main/seasons/season-1/scenes/w2.jpg",
   "introVariations": [
     {
       "requireFlag": "W1_FOUGHT",
@@ -31,13 +31,20 @@
       "id": "lhirien",
       "name": "Lhirien the Great Wolf",
       "abbr": "LW",
-      "imageUrl": "https://cdn.jsdelivr.net/gh/redirakli-arch/rplife-content@main/images/foes/great_wolf.jpg",
+      "imageUrl": "https://cdn.jsdelivr.net/gh/redirakli-arch/rplife-content@main/seasons/season-1/foes/great_wolf.jpg",
       "color": "#6B5A47",
-      "combatStat": { "label": "STR", "value": 60 },
+      "combatStat": {
+        "label": "STR",
+        "value": 60
+      },
       "vitality": 50,
       "dmg": 7,
       "isLeader": true,
-      "displayStats": { "STR": 60, "AGI": 55, "VIT": 50 }
+      "displayStats": {
+        "STR": 60,
+        "AGI": 55,
+        "VIT": 50
+      }
     }
   ],
   "approaches": {
@@ -72,8 +79,23 @@
         "comparedTo": "Bandit's Dagger (+2 dmg)"
       }
     },
-    "defeat":  { "gold": 0, "vit": -15 },
-    "charmed": { "gold": 90, "vit": 0 },
-    "fled":    { "gold": 0, "vit": -5 }
+    "defeat": {
+      "gold": 0,
+      "vit": -15
+    },
+    "charmed": {
+      "gold": 90,
+      "vit": 0
+    },
+    "fled": {
+      "gold": 0,
+      "vit": -5
+    }
+  },
+  "chronicles": {
+    "W2_FOUGHT": "The great wolf fell in the moss. Around her neck you found a collar of woven copper — old, ornate, not made by any human hand.",
+    "W2_CHARMED": "You sat with her and waited. She walked back into the trees as something more than a beast. Her copper collar glinted as she went.",
+    "W2_FLED": "You backed away from her gaze. Whatever she wanted, she did not want you. The Whispering Woods kept their secret.",
+    "W2_LOST": "She was faster than you expected. You woke smeared with blood, alone among the trees."
   }
 }

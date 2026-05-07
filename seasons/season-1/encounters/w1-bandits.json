@@ -3,7 +3,7 @@
   "week": 1,
   "title": "The Bandit Road",
   "setting": "The trade road north of Greyhollow has gone silent. Two merchants haven't returned. Smoke from a campfire was seen in the trees. The villagers ask you to walk the road — they need to know what waits there.",
-  "sceneImageUrl": "https://cdn.jsdelivr.net/gh/redirakli-arch/rplife-content@main/images/scenes/w1_scene.jpg",
+  "sceneImageUrl": "https://cdn.jsdelivr.net/gh/redirakli-arch/rplife-content@main/seasons/season-1/scenes/w1.jpg",
   "introVariations": [
     {
       "requireFlag": null,
@@ -15,24 +15,36 @@
       "id": "garric",
       "name": "Garric the Red",
       "abbr": "GR",
-      "imageUrl": "https://cdn.jsdelivr.net/gh/redirakli-arch/rplife-content@main/images/foes/garric.jpg",
+      "imageUrl": "https://cdn.jsdelivr.net/gh/redirakli-arch/rplife-content@main/seasons/season-1/foes/garric.jpg",
       "color": "#C0392B",
-      "combatStat": { "label": "STR", "value": 50 },
+      "combatStat": {
+        "label": "STR",
+        "value": 50
+      },
       "vitality": 40,
       "dmg": 6,
       "isLeader": true,
-      "displayStats": { "STR": 50, "VIT": 40 }
+      "displayStats": {
+        "STR": 50,
+        "VIT": 40
+      }
     },
     {
       "id": "minion",
       "name": "Bandit Minion",
       "abbr": "BM",
-      "imageUrl": "https://cdn.jsdelivr.net/gh/redirakli-arch/rplife-content@main/images/foes/bandit_minion.jpg",
+      "imageUrl": "https://cdn.jsdelivr.net/gh/redirakli-arch/rplife-content@main/seasons/season-1/foes/bandit_minion.jpg",
       "color": "#9EABB8",
-      "combatStat": { "label": "STR", "value": 35 },
+      "combatStat": {
+        "label": "STR",
+        "value": 35
+      },
       "vitality": 18,
       "dmg": 3,
-      "displayStats": { "STR": 35, "VIT": 18 }
+      "displayStats": {
+        "STR": 35,
+        "VIT": 18
+      }
     }
   ],
   "approaches": {
@@ -67,8 +79,23 @@
         "comparedTo": "Iron Dagger (+1 dmg)"
       }
     },
-    "defeat":  { "gold": 0,  "vit": -10 },
-    "charmed": { "gold": 60, "vit": 0 },
-    "fled":    { "gold": 0,  "vit": -3 }
+    "defeat": {
+      "gold": 0,
+      "vit": -10
+    },
+    "charmed": {
+      "gold": 60,
+      "vit": 0
+    },
+    "fled": {
+      "gold": 0,
+      "vit": -3
+    }
+  },
+  "chronicles": {
+    "W1_FOUGHT": "You met Garric and his men with steel. The leader fell on the road; his minion ran into the trees. The merchant's purse came home with you.",
+    "W1_CHARMED": "You spoke instead of striking. Garric lowered his blade and led his men back into the woods. The road was yours that night.",
+    "W1_FLED": "You rode hard from the bandits before swords could draw blood. The road remained theirs. Greyhollow's elder said nothing on your return.",
+    "W1_LOST": "The bandits left you bleeding by the roadside. You staggered home with empty pockets and Garric's laughter on the wind."
   }
 }
