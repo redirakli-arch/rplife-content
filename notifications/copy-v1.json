@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 1,
+  "version": "2026.05.11.1",
+  "templates": [
+    {
+      "id": "protect-1",
+      "requires": ["evening", "streak-at-risk"],
+      "weight": 3,
+      "title": "Your streak is bleeding out",
+      "body": "Day {streak} ends in a few hours. One log keeps the chain alive."
+    },
+    {
+      "id": "protect-strong",
+      "requires": ["evening", "streak-at-risk", "streak-strong"],
+      "weight": 4,
+      "title": "{streak} days. Don't let tonight be the one.",
+      "body": "Open RPLife and log anything — even a sip of water counts."
+    },
+    {
+      "id": "protect-3",
+      "requires": ["evening", "streak-at-risk"],
+      "weight": 2,
+      "title": "The chamber is quiet. Are you?",
+      "body": "You haven't logged today. Your streak ends at midnight."
+    },
+
+    {
+      "id": "enc-ready-am",
+      "requires": ["enc-ready", "morning"],
+      "weight": 3,
+      "title": "The road bends ahead",
+      "body": "This week's encounter is waiting. Step in when you're ready."
+    },
+    {
+      "id": "enc-ready-pm",
+      "requires": ["enc-ready", "evening"],
+      "weight": 3,
+      "title": "Something is on the road tonight",
+      "body": "You have an encounter to face. Don't go in unprepared — log first."
+    },
+    {
+      "id": "enc-overdue",
+      "requires": ["enc-overdue"],
+      "weight": 5,
+      "title": "The smoke hasn't lifted",
+      "body": "Your encounter has been waiting. The village notices."
+    },
+    {
+      "id": "enc-w1",
+      "requires": ["enc-ready", "week-1"],
+      "weight": 2,
+      "title": "Bandits on the Greyhollow road",
+      "body": "Three of them. Travelers turn back here. You shouldn't."
+    },
+    {
+      "id": "enc-w4",
+      "requires": ["enc-ready", "week-4"],
+      "weight": 4,
+      "title": "The chamber beneath the well",
+      "body": "The finale waits. Whatever you've trained for — bring it."
+    },
+
+    {
+      "id": "sq-untouched-am",
+      "requires": ["morning", "sq-untouched"],
+      "weight": 2,
+      "title": "Three quests, no takers",
+      "body": "Today's quests are still on the board. Pick one before noon."
+    },
+    {
+      "id": "sq-hard-am",
+      "requires": ["morning", "sq-hard-pending"],
+      "weight": 2,
+      "title": "The hard one is worth the most",
+      "body": "Today's Hard quest is open. Finish it before evening for the best haul."
+    },
+    {
+      "id": "sq-pending-pm",
+      "requires": ["evening", "sq-pending", "no-log-today"],
+      "weight": 3,
+      "title": "Quests still pending",
+      "body": "You haven't picked anything up today. The simplest one takes 5 minutes."
+    },
+
+    {
+      "id": "lapsed-2d",
+      "requires": ["no-log-2d"],
+      "weight": 4,
+      "title": "Two days dark",
+      "body": "Your hero is still standing. Log one thing and we pick up where you left off."
+    },
+    {
+      "id": "lapsed-week",
+      "requires": ["no-log-week"],
+      "weight": 5,
+      "title": "The village asks after you",
+      "body": "It's been a week. Open RPLife — your streak resets, but your story doesn't."
+    },
+    {
+      "id": "lapsed-week-story",
+      "requires": ["no-log-week", "season-active"],
+      "weight": 3,
+      "title": "Greyhollow is waiting",
+      "body": "You left mid-season. Whatever happens beneath the well doesn't happen without you."
+    },
+
+    {
+      "id": "story-w2",
+      "requires": ["morning", "week-2", "season-active"],
+      "weight": 1,
+      "title": "The forest holds its breath",
+      "body": "Greyhollow's second week — the wolf hasn't shown itself yet. What you do today matters."
+    },
+    {
+      "id": "story-w3",
+      "requires": ["morning", "week-3", "season-active"],
+      "weight": 1,
+      "title": "A merchant came in the night",
+      "body": "Week 3 of your season. Today's choices set up the finale."
+    },
+    {
+      "id": "between-seasons",
+      "requires": ["between-seasons"],
+      "weight": 2,
+      "title": "Strangers on the road",
+      "body": "Your season closed. Word is traveling. Keep your habits sharp."
+    },
+
+    {
+      "id": "streak-7",
+      "requires": ["morning", "streak-mid", "no-log-today"],
+      "weight": 2,
+      "title": "Day {streak}. The hard part is done.",
+      "body": "A week is the threshold. Past this, the streak holds itself — log today and prove it."
+    },
+    {
+      "id": "streak-30",
+      "requires": ["morning", "streak-strong"],
+      "weight": 1,
+      "title": "{streak} days. People notice this.",
+      "body": "Most never get here. Log today — same as always."
+    },
+
+    {
+      "id": "rest-am",
+      "requires": ["morning", "rest-active"],
+      "weight": 2,
+      "title": "Rest is part of the path",
+      "body": "You're on a rest day. No quests today — just notice how you feel."
+    },
+
+    {
+      "id": "vit-low-pm",
+      "requires": ["evening", "vitality-low"],
+      "weight": 2,
+      "title": "Your vitality runs low",
+      "body": "Sleep, hydration, or a quiet hour — your hero can recover tonight if you do."
+    },
+
+    {
+      "id": "default-am-1",
+      "requires": ["morning"],
+      "weight": 1,
+      "title": "Dawn over Greyhollow",
+      "body": "A new day. What will the chronicle say about it?"
+    },
+    {
+      "id": "default-am-2",
+      "requires": ["morning", "logged-today"],
+      "weight": 1,
+      "title": "Already moving",
+      "body": "You logged this morning. Stack one more before noon — small things compound."
+    },
+    {
+      "id": "default-am-3",
+      "requires": ["morning", "streak-strong"],
+      "weight": 1,
+      "title": "Day {streak} of the chronicle",
+      "body": "Open RPLife. The day is yours to write."
+    },
+
+    {
+      "id": "default-pm-1",
+      "requires": ["evening"],
+      "weight": 1,
+      "title": "Log your deeds",
+      "body": "Before the day closes — what did you build today?"
+    },
+    {
+      "id": "default-pm-2",
+      "requires": ["evening", "logged-today"],
+      "weight": 1,
+      "title": "Anything else for the chronicle?",
+      "body": "You've already logged today. One more entry isn't required — but it's there if you want it."
+    },
+    {
+      "id": "default-pm-3",
+      "requires": ["evening", "no-log-today"],
+      "weight": 2,
+      "title": "Today is unwritten",
+      "body": "No entries yet. Even a one-line log keeps the day on the record."
+    }
+  ]
+}
